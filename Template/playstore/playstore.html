@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mausam : The weather App</title>
+    <link rel="icon" href="../playstore/logo/11d.png">
+    <link rel="stylesheet" href="playstore.css">
+</head>
+<body>
+    <!-- navbar  -->
+    <header class="header">
+        
+            <img src="../playstore/logo/playStoreLogo.svg" width="50px" alt="">
+        <a href="#" class="logo">Google Play</a>
+        
+        <!-- <i class='bx bx-menu' id="menu-icon"></i> -->
+
+        <nav class="navbar">
+            <a href="#">Games</a>
+            <a href="#" class="active">Apps</a>
+            <a href="#">Movies</a>
+            <a href="#">Books</a>
+            <a href="#">Kids</a>
+        </nav>
+    </header>
+
+    <section class="home">
+        <div class="container">
+            <div class="name">
+                <h1>Mausam : The Weather App</h1>
+                <h4>Raju Gorai</h4>
+                <div class="row">
+                    <div class="review">
+                        <h3>4.2 ☆</h3>
+                        <h5>7.9M reviews</h5>
+                    </div>
+                    <div class="download">
+                        <h3>10M+</h3>
+                        <h5>Downloads</h5>
+                    </div>
+                    <div class="rate">
+                        <h3>3+</h3>
+                        <h5>Rated as 3+</h5>
+                    </div>
+                </div>
+                <div class="install">
+                    <div class="btn">
+                        <a class="dbtn" href="../playstore/files/app-arm64-v8a-release.apk" download="mausamApp">Downlaod</a>
+                    </div>
+                    <div class="share">
+                        <h4>Share</h4>
+                        
+                    </div>
+                    <div class="wishlist">
+                        <img src="../playstore/logo/bookmark.svg" alt="">
+                        <h4>Add to wishlist</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="appLogo">
+                <img src="../playstore/logo/11d.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- // slider -->
+
+<div class="nextpart">
+       
+    <div class="slider" x-data="{start: true, end: false}">
+    <div class="slider__content" x-ref="slider" x-on:scroll.debounce="$refs.slider.scrollLeft == 0 ? start = true : start = false; Math.abs(($refs.slider.scrollWidth - $refs.slider.offsetWidth) - $refs.slider.scrollLeft) < 5 ? end = true : end = false;">
+        <div class="slider__item">
+        <img class="slider__image" src="../playstore/images/slide1.png" alt="Image">
+        <div class="slider__info">
+        <!-- <h2>This is a card</h2> -->
+        </div>
+        </div>
+        <div class="slider__item">
+        <img class="slider__image" src="../playstore/images/1.png"  alt="Image">
+        <div class="slider__info">
+        <!-- <h2>This is a card</h2> -->
+        </div>
+        </div>
+        <div class="slider__item">
+        <img class="slider__image" src="../playstore/images/2.png" alt="Image">
+        <div class="slider__info">
+        <!-- <h2>This is a card</h2> -->
+        </div>
+        </div>
+        <div class="slider__item">
+        <img class="slider__image" src="../playstore/images/3.png" alt="Image">
+        <div class="slider__info">
+        <!-- <h2>This is a card</h2> -->
+        </div>
+        </div>
+        <div class="slider__item">
+        <img class="slider__image" src="../playstore/images/1.png" alt="Image">
+        <div class="slider__info">
+        <!-- <h2>This is a card</h2> -->
+        </div>
+        </div>
+        <div class="slider__item">
+      <img class="slider__image" src="../playstore/images/2.png" alt="Image">
+      <div class="slider__info">
+        <!-- <h2>This is a card</h2> -->
+      </div>
+        </div>
+        <div class="slider__item">
+      <img class="slider__image" src="../playstore/images/3.png" alt="Image">
+      <div class="slider__info">
+        <!-- <h2>This is a card</h2> -->
+      </div>
+        </div>
+        <div class="slider__item">
+      <img class="slider__image" src="../playstore/images/1.png" alt="Image">
+      <div class="slider__info">
+        <!-- <h2>This is a card</h2> -->
+      </div>
+        </div>
+        <div class="slider__item">
+      <img class="slider__image" src="../playstore/images/2.png" alt="Image">
+      <div class="slider__info">
+        <!-- <h2>This is a card</h2> -->
+      </div>
+        </div>
+        <div class="slider__item">
+      <img class="slider__image" src="../playstore/images/3.png" alt="Image">
+      <div class="slider__info">
+        <!-- <h2>This is a card</h2> -->
+      </div>
+        </div>
+        <div class="slider__item">
+      <img class="slider__image" src="../playstore/images/1.png" alt="Image">
+      <div class="slider__info">
+        <!-- <h2>This is a card</h2> -->
+      </div>
+        </div>
+    </div>
+    <div class="slider__nav">
+    <button class="slider__nav__button" x-on:click="$refs.slider.scrollBy({left: $refs.slider.offsetWidth * -1, behavior: 'smooth'});" x-bind:class="start ? '' : 'slider__nav__button--active'">Previous</button>
+    <button class="slider__nav__button" x-on:click="$refs.slider.scrollBy({left: $refs.slider.offsetWidth, behavior: 'smooth'});" x-bind:class="end ? '' : 'slider__nav__button--active'">Next</button>
+    </div>
+    </div>
+    
+</div>
+
+<!-- // about app  -->
+
+<div class="about-app">
+    <h2>About the App</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos harum ut quasi doloribus sapiente repellendus, ratione nisi, cumque itaque consequatur laborum illo ad voluptatum nam odio, aliquid quidem similique suscipit?</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores laborum laudantium velit incidunt odio nulla nam consectetur, vitae alias rem nobis, delectus reprehenderit eius nisi tenetur eveniet dolorum voluptates corporis! Sit blanditiis rem rerum? Repellat iste quaerat accusantium alias molestiae!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe explicabo numquam corporis architecto incidunt dicta quibusdam dolore fuga cum veritatis.</p>
+</div>
+
+
+
+
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/alpinejs/3.10.2/cdn.js'></script><script  src="./script.js"></script>
+</body>
+</html>

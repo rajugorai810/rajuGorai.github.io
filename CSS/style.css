@@ -31,6 +31,11 @@ body{
     color: var(--text-color);
 }
 
+/* web icon  */
+/* #webicon{
+    mix-blend-mode: multiply;
+} */
+
 /* header */
 
 .header{
@@ -121,6 +126,8 @@ span{
     border-right: 5px solid var(--main-color);
     border-top: 3px solid var(--main-color);
     box-shadow: 0 0 2rem var(--main-color);
+    /* animation: hoverAnimation 3s ease-in-out; */
+    /* transition: 2s ease; */
 }
 
 @keyframes floatImage {
@@ -134,6 +141,20 @@ span{
         transform: translateY(0);
     }
 }
+
+/* @keyframes hoverAnimation {
+    25%{
+        
+        transform: translateX(25px);
+
+    }
+    50%{
+        transform: scale3d(120%);
+    }
+    100%{
+        transform: scaleY();
+    }
+} */
 
 .home-content p{
     font-size: 1.6rem;
